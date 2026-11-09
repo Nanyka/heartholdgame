@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Barlow:wght@500;600;700&display=swap");
+:root { --ink: #160C02; --ground: #1E1203; --panel: #2C1A03; --paper: #F6E9D4; --muted: #C9B7A6; --gold: #FDB92E; --green: #2FB463; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--ground); color: var(--paper); font-family: "Barlow", system-ui, sans-serif; }
+.page { max-width: 480px; margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; }
+.hero { position: relative; height: 240px; overflow: hidden; }
+.hero-art { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+.hero-shade { position: absolute; left: 0; right: 0; bottom: 0; height: 110px; background: linear-gradient(to bottom, rgba(30,18,3,0), var(--ground)); }
+.logo { position: absolute; left: 14px; top: 14px; width: 170px; height: auto; }
+.body { padding: 0 24px 32px; margin-top: -18px; position: relative; display: flex; flex-direction: column; gap: 18px; }
+.heading { display: flex; flex-direction: column; gap: 4px; }
+h1 { margin: 0; font-family: "Barlow Condensed", sans-serif; font-weight: 900; font-size: 40px; line-height: 0.98; text-transform: uppercase; }
+.street { margin: 0; font-family: "Barlow Condensed", sans-serif; font-weight: 800; font-size: 21px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); }
+.keeper { margin: 0; font-weight: 600; font-size: 15px; color: var(--muted); }
+.pitch { margin: 6px 0 0; font-weight: 500; font-size: 16px; line-height: 1.4; color: var(--muted); }
+.open { height: 58px; border-radius: 16px; background: var(--green); border: 3px solid var(--ink); box-shadow: inset 0 0 0 2px #6FE09A; display: flex; align-items: center; justify-content: center; text-decoration: none; color: #fff; font-family: "Barlow Condensed", sans-serif; font-weight: 800; font-size: 24px; text-transform: uppercase; }
+.stores { display: flex; flex-direction: column; gap: 8px; }
+.stores-label { margin: 0; font-weight: 600; font-size: 14px; color: var(--muted); }
+.store-row { display: flex; gap: 10px; }
+.store { flex: 1; height: 50px; border-radius: 12px; background: var(--paper); border: 2px solid var(--ink); display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; color: var(--ground); font-weight: 700; font-size: 15px; }
+.code-box { border-radius: 16px; background: var(--panel); border: 3px solid var(--ink); box-shadow: inset 0 0 0 2px #5A3D16; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
+.code-label { margin: 0; font-weight: 700; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
+.code-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.code { font-family: "Barlow Condensed", sans-serif; font-weight: 900; font-size: 38px; letter-spacing: 4px; color: var(--gold); }
+.copy { height: 44px; padding: 0 16px; border-radius: 12px; background: var(--gold); border: 2px solid var(--ink); font-family: "Barlow Condensed", sans-serif; font-weight: 800; font-size: 18px; text-transform: uppercase; color: var(--panel); cursor: pointer; }
+.code-note { margin: 0; font-weight: 500; font-size: 14px; line-height: 1.4; color: var(--muted); }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
